@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.fluntoo.zenberry.WebseriesInfoActivity">
+
+    <ImageView
+        android:id="@+id/imginfo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/title_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imginfo"
+        android:text="title"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/agerest_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_info"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:text="18+"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/genres_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agerest_tv_info"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:text="18+"
+        android:textSize="15sp" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genres_tv_info"
+        android:layout_marginLeft="5dp"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/download_btn_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:backgroundTint="#0062cc"
+        android:text="Download" />
+
+    <TextView
+        android:id="@+id/desc_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/download_btn_info"
+        android:text="desc"
+        android:textSize="15sp" />
+<TextView
+    android:id="@+id/cast_tv_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="cast"
+    android:layout_marginLeft="5dp"
+    android:textColor="@color/white"
+    android:textSize="15sp"
+    android:layout_below="@+id/desc_tv_info"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@id/cast_tv_info"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/mylist_btn"
+        android:layout_marginTop="10dp"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/share"
+        android:layout_below="@id/cast_tv_info"
+        android:layout_marginLeft="125dp"
+        android:id="@+id/share_btn"
+        android:layout_marginTop="10dp"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/like"
+        android:layout_below="@id/cast_tv_info"
+        android:layout_marginLeft="225dp"
+        android:id="@+id/like_btn"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/black"
+        app:tabGravity="fill"
+        android:layout_marginTop="10dp"
+        app:tabMode="scrollable"
+        android:layout_below="@id/like_btn"
+        android:background="@color/white">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabPaddingBottom="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingTop="0dp"
+
+        tools:layout_editor_absoluteX="8dp" />
+</RelativeLayout>

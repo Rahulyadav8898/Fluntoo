@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:src="@drawable/uploadimage"
+        android:layout_above="@+id/uploadbtn"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/upload_img"/>
+
+    <Button
+        android:id="@+id/uploadbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+
+        android:textColor="@color/white"
+        android:text="Upload"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

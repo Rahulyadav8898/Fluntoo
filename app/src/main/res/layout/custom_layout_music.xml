@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5b3a9b">
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/exo_playm"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:src="@drawable/exo_ic_play_circle_filled"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/exo_pausem"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/exo_pausem"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/exo_pausem"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/exo_pausem"-->
+<!--        app:tint="@color/white"></ImageView>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/exo_pausem"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:src="@drawable/exo_ic_pause_circle_filled"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:tint="@color/white"></ImageView>-->
+
+    <ImageView
+        android:id="@+id/exo_playm"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/exo_ic_play_circle_filled"
+        app:layout_constraintBottom_toBottomOf="@+id/exo_pausem"
+        app:layout_constraintEnd_toEndOf="@+id/exo_pausem"
+        app:layout_constraintStart_toStartOf="@+id/exo_pausem"
+        app:layout_constraintTop_toTopOf="@+id/exo_pausem"
+        app:tint="@color/white"></ImageView>
+
+    <ImageView
+        android:id="@+id/exo_pausem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/exo_ic_pause_circle_filled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/revmusic"
+        android:layout_width="85dp"
+        android:layout_height="59dp"
+        android:src="@drawable/exo_ic_rewind"
+        app:layout_constraintBottom_toBottomOf="@+id/exo_pausem"
+        app:layout_constraintEnd_toStartOf="@+id/exo_playm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/exo_pausem" />
+
+    <ImageView
+        android:id="@+id/formusic"
+        android:layout_width="85dp"
+        android:layout_height="59dp"
+        android:src="@drawable/exo_ic_forward"
+        app:layout_constraintBottom_toBottomOf="@+id/exo_playm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/exo_playm"
+        app:layout_constraintTop_toTopOf="@+id/exo_playm" />
+
+
+    <TextView
+        android:id="@+id/exo_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="00:0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:text="/"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/exo_duration"
+        app:layout_constraintStart_toEndOf="@+id/exo_duration"
+        app:layout_constraintTop_toTopOf="@+id/exo_duration"></TextView>
+
+    <TextView
+        android:id="@+id/exo_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="00"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/exo_duration"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/exo_duration"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/exo_progress_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.material.progressindicator.LinearProgressIndicator>
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView8"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/pausemusic"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.539"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.666"-->
+    <!--        tools:srcCompat="@tools:sample/avatars" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/web_epd_img"/>
+    <TextView
+        android:id="@+id/epdno_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10sp"
+        android:layout_marginTop="65dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="8dp"/>
+
+
+
+
+</RelativeLayout>

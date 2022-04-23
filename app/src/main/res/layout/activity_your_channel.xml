@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fluntoo.zenberry.YourChannelActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_yourchannel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="190dp"
+            android:src="@drawable/copy" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/search" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_yourchannel"
+        android:background="@color/white"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/black">
+
+        <!--        app:tabMode="scrollable"-->
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <!--    app:tabPaddingBottom="0dp"-->
+    <!--    app:tabPaddingEnd="0dp"-->
+    <!--    app:tabPaddingStart="0dp"-->
+    <!--    app:tabPaddingTop="0dp"-->
+</RelativeLayout>

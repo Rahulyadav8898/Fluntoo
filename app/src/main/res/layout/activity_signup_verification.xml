@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292f47"
+    tools:context=".SignupVerificationActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_logo" />
+
+    <TextView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verify_otp_btn"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="resend Otp"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/verify_otp_signup_edt"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="OTP Sent to Registered Email..."
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/verify_otp_signup_edt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Enter Otp Here"
+        android:textColor="@color/white"
+        android:textColorHint="#B4AEAE"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/resend_otp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verify_otp_signup_edt"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+
+        android:text="resend"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/verify_otp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verify_otp_signup_edt"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="15dp"
+        android:text="verify"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

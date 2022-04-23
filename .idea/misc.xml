@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Rahul/Downloads/PlayFlix (6)/PlayFlix/app/src/main/res/layout/activity_billing_address.xml" value="0.1" />
+        <entry key="..\:/Users/Rahul/Downloads/PlayFlix (6)/PlayFlix/app/src/main/res/layout/activity_billing_vip.xml" value="0.1252136752136752" />
+        <entry key="..\:/Users/Rahul/Downloads/PlayFlix (6)/PlayFlix/app/src/main/res/layout/activity_login_new.xml" value="0.14017094017094017" />
+        <entry key="..\:/Users/Rahul/Downloads/PlayFlix (6)/PlayFlix/app/src/main/res/layout/activity_login_page.xml" value="0.14017094017094017" />
+        <entry key="..\:/Users/Rahul/Downloads/PlayFlix (6)/PlayFlix/app/src/main/res/layout/activity_player.xml" value="0.1" />
+        <entry key="..\:/Users/Rahul/Downloads/PlayFlix (6)/PlayFlix/app/src/main/res/layout/activity_video_upload.xml" value="0.1" />
+        <entry key="..\:/Users/Rahul/Downloads/PlayFlix (6)/PlayFlix/app/src/main/res/layout/activity_webseries.xml" value="0.14017094017094017" />
+        <entry key="..\:/Users/Rahul/Downloads/PlayFlix (6)/PlayFlix/app/src/main/res/layout/activity_webseries_player2.xml" value="0.14017094017094017" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="16" project-jdk-type="JavaSDK" />
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

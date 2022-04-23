@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_subscriptions"
+            android:icon="@drawable/ic_baseline_subscriptions_24"
+            android:title="Subscriptions"
+
+            />
+<!--        <item-->
+<!--            android:id="@+id/nav_downloads"-->
+<!--            android:icon="@drawable/ic_baseline_arrow_downward"-->
+<!--            android:title="Downloads" />-->
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_baseline_notifications_24"
+            android:title="Notification" />
+
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_music"-->
+        <!--            android:title="Music"-->
+        <!--            android:icon="@drawable/ic_baseline_music_note_24"/>-->
+
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_premium"-->
+        <!--            android:title="Premium"-->
+        <!--            android:icon="@drawable/ic_premium"/>-->
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_trending"-->
+        <!--            android:title="Trending"-->
+        <!--            android:icon="@drawable/ic_baseline_trending"/>-->
+        <item
+            android:id="@+id/nav_channels"
+            android:icon="@drawable/ic_channel"
+            android:title="Channels" />
+        <item
+            android:id="@+id/nav_genres"
+            android:icon="@drawable/ic_baseline_generus"
+            android:title="Genres" />
+        <!--        <item-->
+        <!--            android:id="@+id/nav_videoPlaylist"-->
+        <!--            android:title="Video Playlist"-->
+        <!--            android:icon="@drawable/ic_baseline_play"/>-->
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_myPlaylist"-->
+        <!--            android:title="My Playlist"-->
+        <!--            android:icon="@drawable/ic_myplaylist"/>-->
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_goLive"-->
+        <!--            android:title="Go Live"-->
+        <!--            android:icon="@drawable/ic_golive"/>-->
+        <item
+            android:id="@+id/nav_watchlist"
+            android:icon="@drawable/ic_baseline_watch"
+            android:title="Watchlist" />
+        <item
+            android:id="@+id/nav_watchHistory"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="Watch History" />
+        <item
+            android:id="@+id/nav_dataSaver"
+            android:title="Enable Data Saver"
+            app:actionLayout="@layout/switch_item"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/nav_signOut"
+            android:title="Log Out" />
+
+
+
+        <item
+            android:id="@+id/nav_signIn"
+            android:title="Log IN" />
+
+
+    </group>
+</menu>

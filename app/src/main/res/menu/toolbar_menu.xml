@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Menu One"
+        android:id="@+id/menu_one"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always"/>
+<!--        app:showAsAction="always|collapseActionView"-->
+<!--        app:actionViewClass="androidx.appcompat.widget.SearchView"-->
+
+
+
+<!--    <item-->
+<!--        android:title="Menu Three"-->
+<!--        android:id="@+id/menu_three"-->
+<!--        app:showAsAction="always"-->
+<!--        android:icon="@drawable/ic_baseline_music_note_24"-->
+<!--        />-->
+    <item
+        android:title="Menu two"
+        android:id="@+id/menu_two"
+        app:showAsAction="always"
+        app:actionLayout="@layout/profile_menu_layout"/>
+
+
+</menu>

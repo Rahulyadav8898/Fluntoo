@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "344386797894",
+    "project_id": "fluntoo",
+    "storage_bucket": "fluntoo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344386797894:android:40c44cee6cc7644a8ca547",
+        "android_client_info": {
+          "package_name": "com.fluntoo.zenberry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "344386797894-39tpo10qnstvd8psvlc81pohtv4hurdk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluntoo.zenberry",
+            "certificate_hash": "230962d66ce317d2919d7644999f92e8ec3f9644"
+          }
+        },
+        {
+          "client_id": "344386797894-cr950rm6j5aulvklj6j1qi9non8q0bva.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluntoo.zenberry",
+            "certificate_hash": "95d661e3aae8d4ca6c807b4e7d96f5a1eb8a86a3"
+          }
+        },
+        {
+          "client_id": "344386797894-1ngckucm2h22eed0b6na8qft6oasnbv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnP99Ee0bY-NK4nyVTmmt2-vS3PJi2KHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "344386797894-1ngckucm2h22eed0b6na8qft6oasnbv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.fluntoo.zenberry.CreateChannelActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutchannel">
+
+
+        <TextView
+            android:id="@+id/channelname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Channel Name"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/channelnamee_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/channelname"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:hint="Enter Channel Name"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/channeldesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/channelnamee_edt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Channel Description"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/channeldesc_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/channeldesc"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:hint="Enter Channel Name"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/UploadChannleProfileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/channeldesc_edt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Upload Channle Profile Image"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/profile_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UploadChannleProfileImage"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#0062cc"
+            android:text="Upload" />
+
+        <TextView
+            android:id="@+id/UploadChannelPoster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_img_btn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Upload Channel Cover Image"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/channel_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UploadChannelPoster"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#0062cc"
+            android:text="Upload" />
+
+        <TextView
+            android:id="@+id/Socialmedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/channel_img_btn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Social Media"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fb_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/Socialmedia"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/fb" />
+
+        <EditText
+            android:id="@+id/fb_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Socialmedia"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:hint="www.facebook.com/"
+            android:padding="8dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/insta_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/fb_edt"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/insta" />
+
+        <EditText
+            android:id="@+id/insta_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fb_edt"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:hint="www.instagram.com/"
+            android:padding="8dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/twitter_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/insta_edt"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/twitter" />
+
+        <EditText
+            android:id="@+id/twitter_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insta_edt"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:hint="www.twitter.com/"
+            android:padding="8dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/linkdin_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/twitter_edt"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/linkdin" />
+
+        <EditText
+            android:id="@+id/linkdin_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/twitter_edt"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:hint="www.linkdin.com/"
+            android:padding="8dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/business_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/linkdin_edt"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/googlebusiness" />
+
+        <EditText
+            android:id="@+id/business_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linkdin_edt"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:hint="www.business.google.com/"
+            android:padding="8dp" />
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/business_edt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Website"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/web_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/website"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/web" />
+
+        <EditText
+            android:id="@+id/web_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/website"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:hint="www.google.com/"
+            android:padding="8dp" />
+        <Button
+            android:id="@+id/submitcc_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/web_edt"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#0062cc"
+            android:text="Upload" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@id/submitcc_btn"
+            android:id="@+id/imgprof"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@id/imgprof"
+            android:layout_marginTop="5dp"
+            android:id="@+id/imgcover"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

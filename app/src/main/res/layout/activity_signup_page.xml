@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292f47"
+    tools:context="com.fluntoo.zenberry.Signup_Page">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26439482" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="171dp"
+        android:layout_height="82dp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="78dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="28dp"
+        android:text="SignUp"
+        android:textColor="#B4AEAE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="@+id/guideline14" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="145dp"
+        android:layout_height="28dp"
+        android:text="Who Are You?"
+        android:textColor="#B4AEAE"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:layout_constraintVertical_bias="0.964"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/male_img"
+        android:layout_width="63dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/male2"
+        app:layout_constraintEnd_toStartOf="@+id/female_img"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <ImageView
+        android:id="@+id/female_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/femalw2"
+        app:layout_constraintEnd_toStartOf="@+id/others_img"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/male_img"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+
+    <ImageView
+        android:id="@+id/others_img"
+        android:layout_width="57dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/others"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/female_img"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/male_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkButton"
+        android:text="Male"
+        android:textColor="#2596be"
+        app:layout_constraintEnd_toStartOf="@+id/female_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/male_img" />
+
+    <RadioButton
+        android:id="@+id/female_btn"
+        android:layout_width="81dp"
+        android:layout_height="47dp"
+        android:onClick="checkButton"
+        android:text="Female"
+        android:textColor="#D2a1cc"
+        app:layout_constraintEnd_toStartOf="@+id/other_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/male_btn"
+        app:layout_constraintTop_toBottomOf="@+id/female_img" />
+
+    <RadioButton
+        android:id="@+id/other_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkButton"
+        android:text="Other"
+        android:textColor="#BE7725"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/female_btn"
+        app:layout_constraintTop_toBottomOf="@+id/others_img" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circularshape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="#B4AEAE"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/userMail"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="SignUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/userConfirmPassword"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/userConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@id/userConfirmPassword" />
+
+    <EditText
+        android:id="@+id/userMail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/circularshape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter EMail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#B4AEAE"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+    <EditText
+        android:id="@+id/userPhonenumber"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circularshape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Phone Number"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="#B4AEAE"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toEndOf="@+id/userMail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userMail"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circularshape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="#B4AEAE"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/userConfirmPassword"
+        app:layout_constraintEnd_toEndOf="@+id/userPhonenumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userPhonenumber"
+        app:layout_constraintTop_toBottomOf="@+id/userPhonenumber"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <EditText
+        android:id="@+id/userConfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circularshape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Confirm Password"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="#B4AEAE"
+        app:layout_constraintBottom_toTopOf="@+id/btnreg"
+        app:layout_constraintEnd_toEndOf="@+id/userPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userPassword"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword"
+        app:layout_constraintVertical_bias="0.297" />
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView5"-->
+    <!--            android:layout_width="350dp"-->
+    <!--            android:layout_height="150dp"-->
+    <!--            android:layout_above="@+id/tv_who"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_marginStart="106dp"-->
+    <!--            android:layout_marginTop="24dp"-->
+    <!--            android:layout_marginEnd="105dp"-->
+    <!--            android:layout_marginBottom="74dp"-->
+    <!--            app:srcCompat="@drawable/app_logo" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView4"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="120dp"-->
+    <!--            android:text="Sign Up"-->
+    <!--            android:textColor="#B4AEAE"-->
+    <!--            android:textSize="25sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_who"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@+id/textView4"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="WHO YOU ARE?"-->
+    <!--            android:textColor="#B4AEAE"-->
+    <!--            android:textSize="15sp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/male_img"-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_below="@id/tv_who"-->
+    <!--            android:layout_marginLeft="100dp"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:src="@drawable/male2" />-->
+
+    <!--        <RadioGroup-->
+    <!--            android:id="@+id/radio_group"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/male_img"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/male_btn"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="75dp"-->
+    <!--                android:onClick="checkButton"-->
+    <!--                android:text="Male"-->
+    <!--                android:textColor="#2596be" />-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/female_btn"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="35dp"-->
+    <!--                android:onClick="checkButton"-->
+    <!--                android:text="Female"-->
+    <!--                android:textColor="#D2a1cc" />-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/other_btn"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:onClick="checkButton"-->
+    <!--                android:text="Other"-->
+    <!--                android:textColor="#BE7725" />-->
+
+    <!--        </RadioGroup>-->
+
+    <!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_below="@+id/male_img"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginLeft="110dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginTop="3dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:text="Male"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textColor="#2596be"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textSize="12sp" />&ndash;&gt;-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/female_img"-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_below="@id/tv_who"-->
+    <!--            android:layout_marginLeft="200dp"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:src="@drawable/femalw2" />-->
+
+    <!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_below="@+id/male_img"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginLeft="205dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginTop="3dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:text="Female"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textColor="#D2a1cc"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textSize="12sp" />&ndash;&gt;-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/others_img"-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="45dp"-->
+    <!--            android:layout_below="@id/tv_who"-->
+    <!--            android:layout_marginLeft="300dp"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:src="@drawable/others" />-->
+
+    <!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:id="@+id/male_tv"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_below="@+id/male_img"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginLeft="305dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginTop="3dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:text="Other"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textColor="#BE7725"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textSize="12sp" />&ndash;&gt;-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/userName"-->
+    <!--            android:layout_width="350dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_below="@id/radio_group"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="20dp"-->
+
+    <!--            android:ems="10"-->
+    <!--            android:gravity="center"-->
+    <!--            android:hint="Enter Your Name"-->
+    <!--            android:inputType="textPersonName"-->
+    <!--            android:background="@drawable/circularshape"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textColorHint="#B4AEAE"-->
+    <!--            android:textStyle="italic" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="24dp"-->
+    <!--            android:layout_height="24dp"-->
+    <!--            android:layout_below="@id/radio_group"-->
+    <!--            android:layout_marginLeft="45dp"-->
+    <!--            android:layout_marginTop="30dp"-->
+    <!--            android:src="@drawable/person_24" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/userMail"-->
+    <!--            android:layout_width="350dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_below="@+id/userName"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="25dp"-->
+    <!--            android:background="@drawable/circularshape"-->
+    <!--            android:ems="10"-->
+    <!--            android:gravity="center"-->
+    <!--            android:hint=" Enter Your Email"-->
+    <!--            android:inputType="textEmailAddress"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textColorHint="#B4AEAE"-->
+    <!--            android:textStyle="italic" />-->
+
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/userPhonenumber"-->
+    <!--            android:layout_width="350dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_below="@+id/userMail"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="25dp"-->
+    <!--            android:background="@drawable/circularshape"-->
+    <!--            android:ems="10"-->
+    <!--            android:gravity="center"-->
+    <!--            android:hint="Enter Phone Number"-->
+    <!--            android:inputType="phone"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textColorHint="#B4AEAE"-->
+    <!--            android:textStyle="italic" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="24dp"-->
+    <!--            android:layout_height="24dp"-->
+    <!--            android:layout_below="@id/userMail"-->
+    <!--            android:layout_marginLeft="45dp"-->
+    <!--            android:layout_marginTop="35dp"-->
+    <!--            android:src="@drawable/phone_24" />-->
+
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/userPassword"-->
+    <!--            android:layout_width="350dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_below="@+id/userPhonenumber"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="25dp"-->
+    <!--            android:background="@drawable/circularshape"-->
+    <!--            android:ems="10"-->
+    <!--            android:gravity="center"-->
+    <!--            android:hint="Enter Password"-->
+    <!--            android:inputType="textPassword"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textColorHint="#B4AEAE"-->
+    <!--            android:textStyle="italic" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="24dp"-->
+    <!--            android:layout_height="24dp"-->
+    <!--            android:layout_below="@id/userName"-->
+    <!--            android:layout_marginLeft="45dp"-->
+    <!--            android:layout_marginTop="35dp"-->
+    <!--            android:src="@drawable/email_24" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/userConfirmPassword"-->
+    <!--            android:layout_width="350dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_below="@+id/userPassword"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="25dp"-->
+    <!--            android:background="@drawable/circularshape"-->
+    <!--            android:ems="10"-->
+    <!--            android:gravity="center"-->
+    <!--            android:hint="Confirm Password"-->
+    <!--            android:inputType="textPassword"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textColorHint="#B4AEAE"-->
+    <!--            android:textStyle="italic" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="24dp"-->
+    <!--            android:layout_height="24dp"-->
+    <!--            android:layout_below="@id/userPhonenumber"-->
+    <!--            android:layout_marginLeft="45dp"-->
+    <!--            android:layout_marginTop="35dp"-->
+    <!--            android:src="@drawable/pass_24" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="24dp"-->
+    <!--            android:layout_height="24dp"-->
+    <!--            android:layout_below="@id/userPassword"-->
+    <!--            android:layout_marginLeft="45dp"-->
+    <!--            android:layout_marginTop="35dp"-->
+    <!--            android:src="@drawable/pass_24" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnreg"-->
+    <!--            android:layout_width="200dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@+id/userConfirmPassword"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="25dp"-->
+    <!--            android:layout_marginBottom="25dp"-->
+    <!--            android:background="@drawable/circularshape"-->
+
+    <!--            android:text="SIGNUP" />-->
+
+    <!--        &lt;!&ndash;        android:onClick="PostData"&ndash;&gt;-->
+
+
+    <!--        &lt;!&ndash;    <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;        android:id="@+id/response"&ndash;&gt;-->
+    <!--        &lt;!&ndash;        android:layout_width="250dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;        android:layout_height="40dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;        android:text="here will be our response"&ndash;&gt;-->
+    <!--        &lt;!&ndash;        android:textSize="25sp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;        app:layout_constraintHorizontal_bias="0.496"&ndash;&gt;-->
+    <!--        &lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/btnreg"&ndash;&gt;-->
+    <!--        &lt;!&ndash;        tools:ignore="MissingConstraints" />&ndash;&gt;-->
+    <!--    </RelativeLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

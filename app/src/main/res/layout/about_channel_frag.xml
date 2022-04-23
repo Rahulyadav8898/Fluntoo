@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipechannelabout">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="About"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+
+            />
+
+        <TextView
+            android:id="@+id/aboutchannelname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="channel name"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/aboutdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutchannelname"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Desc"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/aboutdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutdesc"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Desc"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/aboutviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutdate"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            android:text="views"
+
+            />
+
+    </RelativeLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

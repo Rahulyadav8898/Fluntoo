@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.fluntoo.zenberry.VideoUploadActivity">
+
+    <RelativeLayout
+        android:id="@+id/videolayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Video Title"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/title_edtc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+
+            android:hint="Enter Video Title"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/videodesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_edtc"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Video Description"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/videodesc_edtc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videodesc"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:hint="Enter Video Description"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/selectchannel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videodesc_edtc"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Select Channel"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerchannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectchannel_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/or_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerchannel"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="OR"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/create_channel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#0062cc"
+            android:text="Create Channel" />
+
+        <TextView
+            android:id="@+id/selectlanguages_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_channel_btn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Select Language"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerlanguages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectlanguages_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerlanguages"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Tags"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tag_edtc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tags"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:hint="Enter Tags"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/Category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tag_edtc"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnercategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Category"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" />
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/category_edtc"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/Category"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="2dp"-->
+        <!--            android:layout_marginRight="5dp"-->
+
+        <!--            android:hint="SelectCategory"-->
+        <!--            android:padding="8dp" />-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/CreatenewCategory"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/category_edtc"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:text="Create New Category"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="18dp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/CreatenewCategory_edt"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/CreatenewCategory"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="2dp"-->
+        <!--            android:layout_marginRight="5dp"-->
+
+        <!--            android:hint="Category Name"-->
+        <!--            android:padding="8dp" />-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/SelelctorAddNewVideo"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/CreatenewCategory_edt"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:text="Selelct or Add New Video"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="18dp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/video_upload_btn"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/SelelctorAddNewVideo"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:backgroundTint="#0062cc"-->
+        <!--            android:text="Upload" />-->
+
+        <TextView
+            android:id="@+id/UploadPoster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnercategory"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Selelct Poster for Video"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/poster_upload_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UploadPoster"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#0062cc"
+            android:text="Select" />
+
+
+        <TextView
+            android:id="@+id/UploadPostertv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/poster_upload_btn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text=" "
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/test_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/submit_btnv"
+            android:layout_marginTop="1dp"
+            android:visibility="gone" />
+        <!--            android:src="@drawable/ic_launcher_background"-->
+
+        <VideoView
+            android:id="@+id/test_video"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/test_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="1dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/textvixibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UploadPostertv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Visiblity"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+<!--        <RadioGroup-->
+<!--            android:id="@+id/radiogroupone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/textvixibility">-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/radioprivate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:onClick="checkbutton"-->
+<!--                android:text="private" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/radiopublic"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:onClick="checkbutton"-->
+<!--                android:text="public" />-->
+<!--        </RadioGroup>-->
+
+        <TextView
+            android:id="@+id/textkids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerprivate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Viewers"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+<!--        <RadioGroup-->
+<!--            android:id="@+id/radiogrouptwo"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/textkids">-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/radiokid"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:onClick="checkbutton2"-->
+<!--                android:text="Kids Only" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/radiokidnot"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:onClick="checkbutton2"-->
+<!--                android:text="All" />-->
+<!--        </RadioGroup>-->
+
+        <Spinner
+            android:id="@+id/spinnerprivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textvixibility"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" />
+
+        <Spinner
+            android:id="@+id/spinnerkids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textkids"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/submit_btnv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerkids"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#0062cc"
+            android:text="submit" />
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

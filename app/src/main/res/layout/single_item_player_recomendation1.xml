@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="#fff"
+    android:padding="8dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblack">
+
+        <ImageView
+            android:id="@+id/playVideoView01"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            tools:ignore="MissingConstraints" />
+
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/imageView01"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/playVideoView01"
+            android:padding="10dp"
+            android:paddingTop="20dp"
+            android:src="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@+id/playVideoView01" />
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/playVideoView01"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="5sp"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="@string/title" />
+
+        <TextView
+            android:id="@+id/channelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="200dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="normal"
+
+            tools:text="@string/channelName" />
+
+        <TextView
+            android:id="@+id/postViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:text="views"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/postTime"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/textViewTitle"-->
+<!--            android:layout_marginLeft="270dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:text="Time"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="10sp"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />-->
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

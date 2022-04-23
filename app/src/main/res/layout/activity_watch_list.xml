@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WatchListActivity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/black">
+
+        <!--        app:tabMode="scrollable"-->
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayoutw"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutw"
+        tools:layout_editor_absoluteX="8dp" />
+
+</RelativeLayout>

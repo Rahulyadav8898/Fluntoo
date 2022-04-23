@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fluntoo.zenberry"
+    tools:ignore="MissingLeanbackLauncher">
+
+    <uses-sdk />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+    <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_CALL_LOG" /> -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:fullBackupContent="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PlayFlix"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name=".WebseriesPlayerActivity"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|screenLayout|smallestScreenSize|screenSize"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"/>
+        <activity
+            android:name=".BillingAddressActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".VideoUploadOneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SubscriptionActivityNew"
+            android:exported="true" />
+        <activity
+            android:name=".SuccesfulPasswordChangedACtivity"
+            android:exported="true" />
+        <activity
+            android:name=".SucesfulSignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentSucessfulActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OTPVerificationActicityNewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotPasswordVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotPasswordActivityNew"
+            android:exported="true" />
+        <activity
+            android:name=".VerifyOtpActivity_New"
+            android:exported="true" />
+        <activity
+            android:name=".Signup_Activity_New"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivityNew"
+            android:exported="true" />
+        <activity
+            android:name=".MusicPlayerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity6"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity7"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity5"
+            android:configChanges="keyboardHidden|orientation|screenLayout|smallestScreenSize|screenSize"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".MainActivity4"
+            android:exported="true" />
+        <activity
+            android:name=".SignupVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="true" />
+        <activity
+            android:name=".StreamingExampleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DownloadingExampleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CommandExampleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".Channel_Name_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationAct"
+            android:exported="true"
+            android:parentActivityName=".NotificationAct">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NotificationAct" />
+        </activity>
+        <activity
+            android:name=".UploadedProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UploadedCoverActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WatchListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GoogleLogin"
+            android:exported="true" />
+        <activity
+            android:name=".OtpVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OfflinePlayerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TestContact"
+            android:exported="true" />
+        <activity
+            android:name=".ServerNotWorkingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CreatePlaylistActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DownloadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShimmerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SubscriptionMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SubscriptionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChannelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WebPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|smallestScreenSize|screenSize"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".WebseriesInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WebseriesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".CreateChannelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VideoUploadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GenresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Login_Page"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Signup_Page"
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".FlixLatestPlayerActivity" -->
+        <!-- android:exported="true" -->
+        <!-- tools:ignore="MissingClass" /> -->
+        <activity
+            android:name=".FlixPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|smallestScreenSize|screenSize"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".FlixGenresPlayerActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+        <activity
+            android:name=".Goive"
+            android:exported="true" />
+        <activity android:name=".FlixGenresActivity" />
+        <activity android:name=".YourChannelActivity" />
+        <activity android:name=".MyAccountActivity" />
+        <activity
+            android:name=".CategoryPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".TrendingActivity" />
+        <activity android:name=".LatestPlayerActivity" />
+        <activity
+            android:name=".Player"
+            android:allowTaskReparenting="true"
+            android:configChanges="keyboardHidden|orientation|screenLayout|smallestScreenSize|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".Model.FileProviders"
+            android:authorities="com.fluntoo.zenberry.Model.FileProviders"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <service android:name=".ExampleService" />
+    </application>
+
+</manifest>

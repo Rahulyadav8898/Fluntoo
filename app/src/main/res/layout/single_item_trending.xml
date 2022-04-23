@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="8dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightblack">
+            <!--        android:layout_marginRight="2dp"-->
+
+
+            <ImageView
+                android:id="@+id/trend_poster_img"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/trend_channel_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/trend_poster_img"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/trend_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trend_poster_img"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp"
+                android:layout_toRightOf="@+id/trend_channel_img"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:maxLines="2"
+                android:text="title"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/views_trend_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trend_title_tv"
+                android:layout_marginLeft="30dp"
+                android:text="views"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/trend_channelname_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="150dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="channel name"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

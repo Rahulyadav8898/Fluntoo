@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.fluntoo.zenberry.Player">
+
+    <RelativeLayout
+        android:id="@+id/real2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/exoPlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/black"
+            app:controller_layout_id="@layout/ustom_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:resize_mode="fixed_width"
+            app:show_buffering="when_playing">
+
+        </com.google.android.exoplayer2.ui.PlayerView>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/real2">
+        <!--         android:layout_marginTop="221dp"-->
+        <!--        >-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tag_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:text="tags"
+                android:textColor="#1685DD"
+                android:textSize="15sp" />
+            <!--    android:layout_below="@+id/real2"-->
+            <TextView
+                android:id="@+id/videoTitleo"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tag_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="45dp"
+                android:text="title"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/views_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/videoTitleo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="views"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/like_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/views_tv"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/like" />
+
+            <ImageView
+                android:id="@+id/likedd1btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/views_tv"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/liked"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/likes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/like_btn"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="likes"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/dislike_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/views_tv"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/dislike" />
+
+            <ImageView
+                android:id="@+id/dislikedd1btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/views_tv"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/disliked"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dilikes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/like_btn"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="2dp"
+                android:text="dislikes"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/share_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/views_tv"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/share" />
+
+            <TextView
+                android:id="@+id/share_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/share_btn"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="2dp"
+                android:text="share"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/watchlater_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/views_tv"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/watch" />
+
+            <TextView
+                android:id="@+id/watchlater_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/watchlater_btn"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="2dp"
+                android:text="Watch later"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/report_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/views_tv"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/report" />
+
+
+            <TextView
+                android:id="@+id/report_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/report_btn"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="2dp"
+                android:text="report"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/dropdown"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/dropdown" />
+            <!--    android:layout_below="@id/real2"-->
+
+
+            <ImageView
+                android:id="@+id/dropup"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/dropup"
+                android:visibility="gone" />
+            <!--    android:layout_below="@id/real2"-->
+            <TextView
+                android:id="@+id/videoDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/likes_tv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewplayer"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/videoDesc"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/channel_img"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/channel_nametv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="160dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="channel name"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/subs_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/channel_nametv"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="3dp"
+                        android:text="subscriber"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/subscribe_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="250dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Subscribe"
+
+                        android:textColor="#D91C1C"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/subscribed_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="250dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Subscribed"
+                        android:textColor="#D91C1C"
+                        android:textSize="17sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/sub_bell"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="340dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/bell" />
+
+                    <ImageView
+                        android:id="@+id/sub_bell1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="340dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/bell1"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/comments_tv"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Comments"-->
+            <!--        android:textSize="15sp"-->
+            <!--        android:layout_below="@id/cardview"-->
+            <!--       android:layout_marginLeft="14dp"-->
+            <!--        android:layout_marginTop="5dp"/>-->
+
+            <Switch
+                android:id="@+id/comment_switch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardviewplayer"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="Comments" />
+
+            <!--    android:checked="true"-->
+
+            <EditText
+                android:id="@+id/edt_commentp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/comment_switch"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/cornershaped"
+                android:hint="Type your comments here..."
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/commentsend_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/comment_switch"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/send"
+                android:visibility="gone" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_comment1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/edt_commentp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_player_rec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_below="@id/comment_switch"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                app:duration="800">
+
+                <!-- Adding 3 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/shimmer_player_recomendation" />
+
+                    <include layout="@layout/shimmer_player_recomendation" />
+
+                    <include layout="@layout/shimmer_player_recomendation" />
+
+                </LinearLayout>
+
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recommend_player_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerview_comment1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp" />
+            <!--            <ProgressBar-->
+            <!--                android:id="@+id/progressbarrec"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/comment_switch"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:layout_marginTop="50dp" />-->
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

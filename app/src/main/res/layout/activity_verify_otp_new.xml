@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/vesi"
+    tools:context=".VerifyOtpActivity_New">
+
+    <EditText
+        android:id="@+id/editTextotp"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:background="@drawable/signupcurved"
+        android:hint="OTP"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/VerifyBUtton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Verify Otp"
+        android:backgroundTint="#4973EF"
+        app:layout_constraintEnd_toEndOf="@+id/editTextotp"
+        app:layout_constraintStart_toStartOf="@+id/editTextotp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextotp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Otp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextotp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744" />
+
+    <TextView
+        android:id="@+id/resendtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend Otp"
+        android:textColor="#4973EF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VerifyBUtton"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextotp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextotp"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="@+id/editTextotp"
+        app:layout_constraintTop_toTopOf="@+id/editTextotp"
+        app:layout_constraintVertical_bias="0.533"
+        android:src="@drawable/pass_24"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

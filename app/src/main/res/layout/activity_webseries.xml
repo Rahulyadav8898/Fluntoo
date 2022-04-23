@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity3">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="7dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="400dp"
+        android:layout_height="198dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/guideline28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imgweb"
+        android:layout_width="103dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline28"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/titleweb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="title"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toEndOf="@+id/imgweb"
+        app:layout_constraintTop_toTopOf="@+id/guideline28" />
+
+    <TextView
+        android:id="@+id/genresweb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="genres"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/titleweb"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleweb"
+        app:layout_constraintTop_toBottomOf="@+id/titleweb" />
+
+    <TextView
+        android:id="@+id/dateweb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="date"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgweb"
+        app:layout_constraintEnd_toEndOf="@+id/genresweb"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/genresweb"
+        app:layout_constraintTop_toBottomOf="@+id/genresweb"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/restrictionweb"
+        android:layout_width="29dp"
+        android:layout_height="18dp"
+        android:text="resc"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateweb"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toEndOf="@+id/dateweb"
+        app:layout_constraintTop_toTopOf="@+id/dateweb"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/castweb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cast"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/restrictionweb"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/imgweb"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <Button
+        android:id="@+id/web_watchlist_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circularshape"
+        android:backgroundTint="#0062cc"
+        android:text="Watch Later"
+        app:layout_constraintStart_toStartOf="@+id/castweb"
+        app:layout_constraintTop_toBottomOf="@+id/castweb" />
+
+    <Button
+        android:id="@+id/web_share_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circularshape"
+        android:backgroundTint="#0062cc"
+        android:text="Share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toEndOf="@+id/web_watchlist_btn"
+        app:layout_constraintTop_toBottomOf="@+id/castweb" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/web_share_btn"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/web_watchlist_btn" />
+
+    <TextView
+        android:id="@+id/epd_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/roboto_medium_numbers"
+        android:text="Episodes"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/web_episodes_recyclerview"
+        android:layout_width="385dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/epd_tv" />
+
+    <TextView
+        android:id="@+id/morelikethis_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium_numbers"
+        android:text="More like This..."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/web_episodes_recyclerview"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="@+id/web_episodes_recyclerview"
+        app:layout_constraintTop_toBottomOf="@+id/web_episodes_recyclerview" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_recommended_web"
+        android:layout_width="379dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/morelikethis_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="@color/black"-->
+    <!--    android:keepScreenOn="true"-->
+    <!--    tools:context="com.fluntoo.zenberry.WebseriesActivity">-->
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/img1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="220dp"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        android:src="@mipmap/ic_launcher" />-->
+
+    <!--    &lt;!&ndash;    <com.google.android.exoplayer2.ui.PlayerView&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:id="@+id/exoPlayerView_web"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_height="220dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:background="@color/black"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        app:controller_layout_id="@layout/ustom_layout"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        app:resize_mode="fixed_width"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        app:show_buffering="when_playing">&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;    </com.google.android.exoplayer2.ui.PlayerView>&ndash;&gt;-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imgweb"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:layout_below="@+id/img1"-->
+    <!--        android:layout_marginLeft="2dp"-->
+    <!--        android:layout_marginTop="2dp"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        android:src="@mipmap/ic_launcher" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/titleweb"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/img1"-->
+    <!--        android:layout_marginLeft="100dp"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:maxLines="2"-->
+    <!--        android:text="title"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="18sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/genresweb"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/titleweb"-->
+    <!--        android:layout_marginLeft="100dp"-->
+    <!--        android:text="genres"-->
+    <!--        android:textColor="@color/grey"-->
+    <!--        android:textSize="15dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/dateweb"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/genresweb"-->
+    <!--        android:layout_marginLeft="100dp"-->
+    <!--        android:text="date"-->
+    <!--        android:textColor="@color/grey"-->
+    <!--        android:textSize="15dp" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/restrictionweb"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/genresweb"-->
+    <!--        android:layout_marginLeft="200dp"-->
+    <!--        android:text="restriction"-->
+    <!--        android:textColor="@color/grey"-->
+    <!--        android:textSize="15dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/descweb"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/imgweb"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:maxLines="2"-->
+    <!--        android:text="description"-->
+    <!--        android:textColor="@color/grey"-->
+    <!--        android:textSize="15dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/castweb"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/descweb"-->
+    <!--        android:layout_marginLeft="3dp"-->
+    <!--        android:layout_marginTop="2dp"-->
+    <!--        android:text="cast"-->
+    <!--        android:textColor="@color/grey"-->
+    <!--        android:textSize="15sp" />-->
+
+    <!--&lt;!&ndash;    <Button&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/download_btn"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="120dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_below="@+id/castweb"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginLeft="15dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:background="@drawable/circularshape"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:backgroundTint="#0062cc"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:text="Download"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:textSize="15sp" />&ndash;&gt;-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/web_watchlist_btn"-->
+    <!--        android:layout_width="180dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/castweb"-->
+    <!--        android:layout_marginLeft="15dp"-->
+    <!--        android:background="@drawable/circularshape"-->
+    <!--        android:backgroundTint="#0062cc"-->
+    <!--        android:text="Watchlist" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/web_share_btn"-->
+    <!--        android:layout_width="180dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/castweb"-->
+    <!--        android:layout_marginLeft="225dp"-->
+    <!--        android:background="@drawable/circularshape"-->
+    <!--        android:backgroundTint="#0062cc"-->
+    <!--        android:text="Share" />-->
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinner"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/web_watchlist_btn"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:background="@color/white" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/epd_tv"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/spinner"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:fontFamily="@font/roboto_medium_numbers"-->
+    <!--        android:text="Episodes"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textStyle="bold" />-->
+
+
+    <!--    <com.facebook.shimmer.ShimmerFrameLayout-->
+    <!--        android:id="@+id/shimmer_web_epd"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="480dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:duration="800">-->
+
+    <!--        &lt;!&ndash; Adding 3 rows of placeholders &ndash;&gt;-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <include layout="@layout/shrimmer_flix_recommended" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="210dp"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <include layout="@layout/shrimmer_flix_recommended" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="420dp"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <include layout="@layout/shrimmer_flix_recommended" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="630dp"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <include layout="@layout/shrimmer_flix_recommended" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </com.facebook.shimmer.ShimmerFrameLayout>-->
+
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/web_episodes_recyclerview"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/epd_tv"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:layout_marginRight="5dp" />-->
+
+    <!--    &lt;!&ndash;    <TextView&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:id="@+id/morelikethis_tv"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_below="@+id/web_episodes_recyclerview"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginLeft="20dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginTop="5dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:fontFamily="@font/roboto_medium_numbers"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:text="More Like This.."&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:textColor="@color/white"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:textSize="20sp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:textStyle="bold" />&ndash;&gt;-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/morelikethis_tv"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:layout_marginTop="600dp"-->
+    <!--        android:fontFamily="@font/roboto_medium_numbers"-->
+    <!--        android:text="More Like This.."-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <!--    <com.facebook.shimmer.ShimmerFrameLayout-->
+    <!--        android:id="@+id/shimmer_web_rec"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="630dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:duration="800">-->
+
+    <!--        &lt;!&ndash; Adding 3 rows of placeholders &ndash;&gt;-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <include layout="@layout/shrimmer_flix_recommended" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="210dp"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <include layout="@layout/shrimmer_flix_recommended" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="420dp"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <include layout="@layout/shrimmer_flix_recommended" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="630dp"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <include layout="@layout/shrimmer_flix_recommended" />-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </com.facebook.shimmer.ShimmerFrameLayout>-->
+
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recyclerview_recommended_web"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/morelikethis_tv"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:layout_marginBottom="10dp" />-->
+
+
+    <!--</RelativeLayout>-->

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePlaylistActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playlisttitle_tv"
+        android:text="PlayList Title"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/edt_playlisttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Playlist Title"
+        android:layout_below="@id/playlisttitle_tv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playlistdesc_tv"
+        android:text="PlayList Description"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/edt_playlisttitle"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/edt_playlistdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Playlist Description"
+        android:layout_below="@id/playlistdesc_tv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playlistcategory_tv"
+        android:text="PlayList Category"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/edt_playlistdesc"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/edt_playlistcat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Playlist Category"
+        android:layout_below="@id/playlistcategory_tv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playlisttag_tv"
+        android:text="PlayList Tag"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/edt_playlistcat"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/edt_playlisttag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Playlist Tag"
+        android:layout_below="@id/playlisttag_tv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playlistchannelname_tv"
+            android:text="Select Channel"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/edt_playlisttag"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <Spinner
+            android:id="@+id/spinnerchannelname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playlistchannelname_tv"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playlistvideoname_tv"
+            android:text="Select Video"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/spinnerchannelname"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <Spinner
+            android:id="@+id/spinnervideoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playlistvideoname_tv"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playlistselect_btn"
+            android:text="Select Poster"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/spinnervideoname"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imgselect"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_below="@+id/playlistselect_btn"/>
+
+        <Button
+            android:id="@+id/playlistuploadbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="upload"
+            android:layout_below="@id/imgselect"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

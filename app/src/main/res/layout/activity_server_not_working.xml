@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblack"
+    tools:context=".ServerNotWorkingActivity">
+
+    <ImageView
+        android:id="@+id/servernotwroking"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/error1" />
+
+    <TextView
+        android:id="@+id/txxt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/servernotwroking"
+        android:layout_centerHorizontal="true"
+        android:text="Server is Updating...."
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txxt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txxt_1"
+        android:layout_centerHorizontal="true"
+        android:text="Please Come Back After SomeTime"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonnot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txxt_2"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="OK"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
